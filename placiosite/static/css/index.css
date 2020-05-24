@@ -1,0 +1,59 @@
+.banner {
+    background-color: #a1b9cd;
+}
+
+.banner img{
+    height: 33em;
+}
+
+.banner p{
+    font-size: 1.5em;
+    margin: 3em 4em 2em 8em;
+}
+
+.amenities1 .firstrow{
+    margin-bottom: 3em;
+}
+
+.amenities1 img{
+    width: 20%;
+   
+}
+
+.amenities1 h2 {
+    margin: 2em 0em 1em 16em;
+}
+
+.m1{
+    text-align: center;
+}
+
+.forall img{
+    height: 13em;
+}
+
+.all h2{
+    margin: 2em 0em 1em 16em;
+}
+
+.forall .lastcard{
+    padding-bottom: 1.5em;
+}
+
+
+.properties h2{
+    margin-left: 11em;
+}
+
+.hunter img{
+    width: 30%;;
+}
+
+.house {
+    text-align: center;
+    margin: 3em 0 0 0;
+}
+
+.house h4{
+    margin: 1.5em 0 1em 0;
+}

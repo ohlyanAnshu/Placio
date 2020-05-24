@@ -1,0 +1,19 @@
+nav img{
+    height: 40px;
+    width: 87px;
+}
+
+.phone {
+    margin-left: 8em;
+    margin-right: 9em;
+}
+
+nav ul li{
+    margin-left: 14px;
+    color: black;
+}   
+
+.navbar-light .navbar-nav .nav-link {
+    color: black;
+}
+

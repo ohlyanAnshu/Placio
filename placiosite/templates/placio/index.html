@@ -1,0 +1,190 @@
+{% extends 'placio/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container-fluid">
+  <div class="row banner">
+    <div class="col-lg-6">
+      <p>Hassle free, Secure & Modern Student Living</p>
+
+      <div class="form-group">
+        <select class="form-control" id="sel1">
+          <option hint>Select your City</option>
+          {% for city in city %}
+          <option>{{ city.city}}</option>
+          {% endfor %}
+
+        </select>
+      </div>
+    </div>
+
+    <div class="col-lg-6">
+      <img src="{% static 'images/girl1.png' %}">
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid amenities1">
+  <div class="row">
+    <h2>Experience Placio</h2>
+  </div>
+  <div class="row firstrow">
+    <div class="col-lg-3 m1">
+      <img src="{% static 'images/wifi.png' %}">
+      <h4>WIFI</h4>
+      <h6>High Speed WiFi to make sure you’re connected 24x7</h6>
+    </div>
+    <div class="col-lg-3 m1">
+      <img src="{% static 'images/clothes.png' %}">
+      <h4>LAUNDARY</h4>
+      <h6>Say good bye to your laundry worries</h6>
+    </div>
+    <div class="col-lg-3 m1">
+      <img src="{% static 'images/air-conditioner.png' %}">
+      <h4>AC</h4>
+      <h6>Get AC rooms to survive hot summer days</h6>
+    </div>
+    <div class="col-lg-3 m1">
+      <img src="{% static 'images/cafe.png' %}">
+      <h4>CAFE</h4>
+      <h6>On-property cafes so a quick bite is never too far away.</h6>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-3 m1">
+      <img src="{% static 'images/24-7-icon.png' %}">
+      <h4>24X7 HELPLINE</h4>
+      <h6>Where you can resolve your booking issue & complaints during your stay</h6>
+    </div>
+    <div class="col-lg-3 m1">
+      <img src="{% static 'images/vegetable.png' %}">
+      <h4>FOOD</h4>
+      <h6>Delish and healthy meals will put those food ordering apps to rest.</h6>
+    </div>
+    <div class="col-lg-3 m1">
+      <img src="{% static 'images/generator-plugin-system.png' %}">
+      <h4>POWER BACKUP</h4>
+      <h6>Power backup always ready for interruption free living.</h6>
+    </div>
+    <div class="col-lg-3 m1">
+      <img src="{% static 'images/fitness-icon.jpeg' %}">
+      <h4>FITNESS</h4>
+      <h6>Discover and book workouts like gym and yoga with us.</h6>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid all">
+  <div class="row">
+    <h2>Placio For All</h2>
+  </div>
+  <div class="row forall">
+    <div class="col-lg-3">
+      <div class="card">
+        <img src="{% static 'images/students.jpg' %}">
+        <div class="card-body">
+          <h4>STUDENTS</h4>
+          <p>Are you a student moving to a new city for studies. Learn why Placio can be your home away from home.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3">
+      <div class="card">
+        <img src="{% static 'images/parents.jpg' %}">
+        <div class="card-body">
+          <h4>PARENTS</h4>
+          <p>Sending your child away from home can be a daunting experience. Learn how Placio helps with the process.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3">
+      <div class="card">
+        <img src="{% static 'images/college.jpg' %}">
+        <div class="card-body">
+          <h4>INSTITUTES</h4>
+          <p>Having an off-campus student accommodation comes with challenges. Get to know how we can help.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3">
+      <div class="card lastcard">
+        <img src="{% static 'images/owner.jpg' %}">
+        <div class="card-body">
+          <h4>PROPERTY OWNER</h4>
+          <p>Own a property? Learn how you can partner with Placio and what’s in it for you.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="container-fluid all">
+  <div class="row properties">
+    <h2>Offering Dynamic and Economical Properties</h2>
+  </div>
+  <div class="row forall">
+    <div class="col-lg-3">
+      <div class="card">
+        <img src="{% static 'images/ROOM.jpg' %}">
+        <div class="card-body">
+          <h4>PLACIO AK MANSION</h4>
+          <p>Everything a student could want is here. We’re here to make sure you get the most out of your student life.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3">
+      <div class="card">
+        <img src="{% static 'images/ROOM.jpg' %}">
+        <div class="card-body">
+          <h4>PLACIO ELITE HOMES</h4>
+          <p>Enjoy your student housing at your new home away from home. Relax after class or catch up with your friends..</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3">
+      <div class="card">
+        <img src="{% static 'images/ROOM.jpg' %}">
+        <div class="card-body">
+          <h4>PLACIO HALF PENNY</h4>
+          <p>Come live the ultimate student life, forge deep friendships and avail a fantastic study environment. </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3">
+      <div class="card">
+        <img src="{% static 'images/ROOM.jpg' %}">
+        <div class="card-body">
+          <h4>PLACIO AMY HOUSE</h4>
+          <p>Experience all the comforts of the home you are used to. Live, bond and study with students from very diverse backgrounds. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="container-fluid hunter">
+  <div class="row">
+    <h2 style="margin: 1.5em 0 0 15em;">House Hunter's Guide</h2>
+  </div>
+  <div class="row">
+    <div class="col-lg-4 house">
+      <img src="{% static 'images/building.jpg' %}">
+      <h4>DISCOVER PROPERTIES</h4>
+      <h6>Start your University living with Placio, discover plush privates rooms or comfybeds and live with your friends.</h6>
+    </div>
+    <div class="col-lg-4 house">
+      <img src="{% static 'images/people.jpg' %}">
+      <h4>WE BELIEVE IN YOUR COMFORT</h4>
+      <h6>Your package includes every thing right from fully furnished AC rooms to professionally managed services. </h6>
+    </div>
+    <div class="col-lg-4 house">
+      <img src="{% static 'images/check.jpg' %}">
+      <h4>BOOK YOUR BED</h4>
+      <h6>Visit property and book the bed you like with a token amount. No-Brokerage. </h6>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
