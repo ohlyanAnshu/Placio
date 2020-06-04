@@ -8,15 +8,33 @@
       <p>Hassle free, Secure & Modern Student Living</p>
 
       <div class="form-group">
-        <select class="form-control" id="sel1">
-          <option hint>Select your City</option>
-          {% for city in city %}
-          <option>{{ city.city}}</option>
-          {% endfor %}
-
+        <select class="form-control" id="sel1" onchange="run()">
+          <option value disabled selected>Select your City</option>
+          <option value="1">Greater Noida</option>
+          <option value="2">Indore</option>
+          <option value="3">Laxmi Nagar</option>
+          <option value="4">Lucknow</option>
+          <option value="5">Noida</option>
+          <option value="6">North Delhi</option>
+          <option value="6">South Delhi</option>
         </select>
+        <select class="form-control" id="sel2" >
+          <option selected disabled>Select your University</option>
+          
+              <option></option>
+        
+        </select>
+        <button type="button" id="search">Search</button>
       </div>
     </div>
+
+
+    <script>
+       function run() {
+        document.getElementById("sel2").value = document.getElementById("sel1").value;
+    }
+
+    </script>
 
     <div class="col-lg-6">
       <img src="{% static 'images/girl1.png' %}">
@@ -74,12 +92,14 @@
   </div>
 </div>
 
-<div class="container-fluid all">
+<div class="container-fluid all1">
   <div class="row">
     <h2>Placio For All</h2>
   </div>
   <div class="row forall">
     <div class="col-lg-3">
+
+      <a href="{% url 'whyus' %}">
       <div class="card">
         <img src="{% static 'images/students.jpg' %}">
         <div class="card-body">
@@ -87,8 +107,12 @@
           <p>Are you a student moving to a new city for studies. Learn why Placio can be your home away from home.</p>
         </div>
       </div>
+    </a>
+
     </div>
     <div class="col-lg-3">
+
+      <a href="{% url 'whyus' %}">
       <div class="card">
         <img src="{% static 'images/parents.jpg' %}">
         <div class="card-body">
@@ -96,17 +120,24 @@
           <p>Sending your child away from home can be a daunting experience. Learn how Placio helps with the process.</p>
         </div>
       </div>
+      </a>
+
     </div>
     <div class="col-lg-3">
-      <div class="card">
+
+      <a href="{% url 'whyus' %}">
+        <div class="card">
         <img src="{% static 'images/college.jpg' %}">
         <div class="card-body">
           <h4>INSTITUTES</h4>
           <p>Having an off-campus student accommodation comes with challenges. Get to know how we can help.</p>
         </div>
       </div>
+      </a>
     </div>
     <div class="col-lg-3">
+
+      <a href="{% url 'whyus' %}">
       <div class="card lastcard">
         <img src="{% static 'images/owner.jpg' %}">
         <div class="card-body">
@@ -114,6 +145,7 @@
           <p>Own a property? Learn how you can partner with Placio and what’s in it for you.</p>
         </div>
       </div>
+      </a> 
     </div>
   </div>
 
@@ -123,8 +155,10 @@
   <div class="row properties">
     <h2>Offering Dynamic and Economical Properties</h2>
   </div>
-  <div class="row forall">
+  <div class="row forall">   
     <div class="col-lg-3">
+
+      <a href="{% url 'whyus' %}">
       <div class="card">
         <img src="{% static 'images/ROOM.jpg' %}">
         <div class="card-body">
@@ -132,8 +166,12 @@
           <p>Everything a student could want is here. We’re here to make sure you get the most out of your student life.</p>
         </div>
       </div>
-    </div>
+    </a>    
+    </div>    
+    
     <div class="col-lg-3">
+
+      <a href="{% url 'whyus' %}">
       <div class="card">
         <img src="{% static 'images/ROOM.jpg' %}">
         <div class="card-body">
@@ -141,8 +179,11 @@
           <p>Enjoy your student housing at your new home away from home. Relax after class or catch up with your friends..</p>
         </div>
       </div>
+      </a>
     </div>
+
     <div class="col-lg-3">
+      <a href="{% url 'whyus' %}">
       <div class="card">
         <img src="{% static 'images/ROOM.jpg' %}">
         <div class="card-body">
@@ -150,8 +191,11 @@
           <p>Come live the ultimate student life, forge deep friendships and avail a fantastic study environment. </p>
         </div>
       </div>
-    </div>
+    </a>
+      </div>
+  
     <div class="col-lg-3">
+      <a href="{% url 'whyus' %}">
       <div class="card">
         <img src="{% static 'images/ROOM.jpg' %}">
         <div class="card-body">
@@ -159,6 +203,7 @@
           <p>Experience all the comforts of the home you are used to. Live, bond and study with students from very diverse backgrounds. </p>
         </div>
       </div>
+      </a>
     </div>
   </div>
 
@@ -186,5 +231,40 @@
     </div>
   </div>
 </div>
+
+<div class="container-fluid">
+  <div class="row we">
+    <h2>How We Support You</h2>
+  </div>
+  <div class="row response">
+    <h5><strong>24response.com in association with PLACIO</strong></h5>
+  </div>
+  <div class="row support">
+    <div class="col-lg-3 help">
+      <i class="fa fa-mobile" aria-hidden="true"></i>
+      <h4>Mobile App</h4>
+    </div>
+    <div class="col-lg-3 help">
+      <i class="fa fa-ambulance" aria-hidden="true"></i>
+      <h4>24X7 On Call</h4>
+    </div>
+    <div class="col-lg-3 help">
+      <i class="fa fa-car" aria-hidden="true"></i>
+      <h4>On Ground</h4>
+    </div>
+    <div class="col-lg-3 help">
+      <i class="fa fa-users" aria-hidden="true"></i>
+      <h4>Coordination</h4>
+    </div>
+  </div> 
+  <div class="row para">
+    <p>24 Response is India's 1st On Demand Safety Service,which provides a Quick Response and Immediate Assistance to its customers, whenever they are faced with any real life situation involving Personal Safety. Our Mobile App automatically tracks your location and connects you to the command center with system alert to your location.</p>
+  </div>
+  <div class="row">
+    <img src="{% static 'images/passion.png' %}">
+  </div>
+</div>
+
+
 
 {% endblock %}

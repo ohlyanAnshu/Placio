@@ -5,24 +5,26 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-lg-5">
-            <h1 id="kook">Don't Be A Kook</h1>
-            <p class="req">You need not spend endless hours surfing the internet for your dream room.</p>
-            <p class="req">Just sit back and relax, Placio will help you to figure out the right property at the right price and location.</p>
-            <img src="{% static 'images/man.png' %}" alt="man">
+            <h1 id="kook1">Escalate Your Rental Revenue</h1>
+            <p class="req">Are you thinking about renting your property, but how do you ensure you find the right resident?</p>
+            <img src="{% static 'images/partner.jpg' %}" alt="man" id="partner">
+            <p class="req">We at Placio, aim to increase revenue and occupancy by providing quality living spaces to a million plus college going students.</p>
+            <p class="req">Simply give us a little brief about your property by filling a form and our team will be happy to assist you to find the right tenant. </p>
+            <p class="req">Not Only that, we will also assist you to roll-out all manner of changes to make your living space more desirable and enrapturing.</p>
         </div>
         <div class="col-lg-7">
-            <form method="POST" class="post-form form1">{% csrf_token %}
-                <h3>POST YOUR REQUIREMENT</h3>
-      
-
-                Name: {{ form.name }}
-                Email: {{ form.email }}<br>
-                Mobile No.: {{ form.phone_number }}
-                City: {{ form.city }}<br>
-                Area/Locality: {{ form.area }}
-                Budget: {{ form.budget }}<br>
-                Type of room: {{ form.roomtype }}<br>
-                Comment: {{ form.comment }}
+            <form method="POST" class="post-form form2">{% csrf_token %}
+                <h5>FRANCHISE WITH US</h5>
+                Name: {{ form1.name }}
+                Email: {{ form1.email }}<br>
+                Mobile No.: {{ form1.mobile_number }}
+                Type of Property: {{ form1.typeofproperty }}<br>
+                Number of Bedrooms: {{ form1.NumberofBedrooms }}
+                Expected Rent: {{ form1.ExpectedRent }}<br>
+                Currently Vacant/Occupied: {{ form1.currentStatus }}
+                City: {{ form1.city }}<br>
+                Address: {{ form1.address}}<br>
+                Comment: {{ form1.comment }}
                 
                 <button type="submit" class="save btn btn-default">Save</button>
             </form>

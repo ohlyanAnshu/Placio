@@ -4,3 +4,5 @@ from  .models import *
 admin.site.register(City)
 admin.site.register(University)
 admin.site.register(PostYourReq)
+admin.site.register(Franchise)
+admin.site.register(PayRent)

@@ -1,0 +1,57 @@
+.form2{
+    border: 1px solid #DEDEDE;
+    padding: 1em 2em 10em 2em;
+}
+
+.post1 .card{
+    width: 17em;
+    text-align: center;
+}
+
+.col1{    
+    margin-left: 8em;
+}
+
+.col3{
+    margin-left: -8em;
+}
+
+.post1 img{
+    width: 6em;
+    height: 6em;
+    margin: 2em 0 0 5em;
+}
+
+.post1{
+    margin: 2em 0em 2em 0em;
+}
+
+.list1 ul{
+    list-style-type: none;
+    text-align: left;
+}
+
+.list1 ul li{
+    margin: 0em 0em 1em -3em;
+}
+
+#kook1{
+    font-weight: bold;
+    margin-left: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.req{
+    text-align: center;
+    margin-left:1em;
+}
+
+#partner{
+    width: 28em;
+}
+
+.form2 h5{
+    font-weight: bold;
+}
+

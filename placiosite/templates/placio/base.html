@@ -11,12 +11,36 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
     <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <link rel="stylesheet" href="{% static 'css/whyus.css' %}">
+    <link rel="stylesheet" href="{% static 'css/postyourreq.css' %}">    
+    <link rel="stylesheet" href="{% static 'css/franchise.css' %}">  
+    <link rel="stylesheet" href="{% static 'css/pay.css' %}"> 
+    <link rel="stylesheet" href="{% static 'css/aboutus.css' %}"> 
+
+    <link href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="http://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
+  <meta charset="utf-8">
+  <script>
+   
     
+    $(function() {
+      var options = $("#PCMain_ucCaseDetail_RepeaterDynamic_2038002_1").html();
+    $("#PCMain_ucCaseDetail_RepeaterDynamic_2038001_0").change(function(e) {
+        var text = $("#PCMain_ucCaseDetail_RepeaterDynamic_2038001_0 :selected").text();
+        $("#PCMain_ucCaseDetail_RepeaterDynamic_2038002_1").html(options);
+        if (text == "Select your City") return;
+        $('#PCMain_ucCaseDetail_RepeaterDynamic_2038002_1 :not([value^="' + text.substr(0, 3) + '"])').remove();
+
+    });
+    });
+    
+    </script>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="#"><img src="{% static 'images/logo.png' %}"></a>
+    <nav class="navbar navbar-expand-lg navbar-light nav1">
+        <a class="navbar-brand" href="{% url 'index' %}"><img src="{% static 'images/logo.png' %}"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -28,19 +52,19 @@
                     <a class="nav-link phone"><i class="fa fa-phone"></i>  +91.705.310.9531</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Why Us</a>
+                    <a class="nav-link" href="{% url 'whyus' %}">Why Us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About Us</a>
+                    <a class="nav-link" href="{% url 'aboutus' %}">About Us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Post your Requirement</a>
+                    <a class="nav-link" href="{% url 'postyourrequirement' %}">Post your Requirement</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Franchise</a>
+                    <a class="nav-link" href="{% url 'franchise' %}">Franchise</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Pay Rent</a>
+                    <a class="nav-link" href="{% url 'payrent' %}">Pay Rent</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Refer & Win</a>
@@ -51,10 +75,64 @@
     {% block content%}
 
     {% endblock %}
-
-
-
-
+    <footer>
+        <div class="container-fluid">
+          <div class="row footer1">
+            <div class="col-lg-3">
+              <h4>Head Office</h4>
+              <p>E2/E3 Amity Innovation Incubator,<br>
+              8th Floor, Sector 125, <br>
+              Noida, 201301 <br>
+              Uttar Pradesh </p>
+              <p>
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <a href="tel:+91.705.310.9531" style="color: black;">+91.705.310.9531</a>
+              </p>
+              <p>
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <a href="mail:hello@placio.in" style="color: black;">hello@placio.in</a>
+              </p>
+            </div>
+            <div class="col-lg-3 link">
+              <ul>
+              <li><a href="">About Us</a><br></li>
+              <li><a href="">Downlaod Placio E Brouchre</a><br></li>
+              <li><a href="">Privacy Policy</a><br></li>
+              <li><a href="">Refund and Cancellation</a><br></li>
+              <li><a href="">Terms and Conditions</a></li>
+            </ul>
+            </div>
+            <div class="col-lg-3 link1">
+              <ul>
+                <li><a href="">Contact Us</a><br></li>
+                <li><a href="">Pay Rent</a><br></li>
+                <li><a href="">Placio Policy</a><br></li>
+                <li><a href="">Student Testimonial</a><br></li>
+                <li><a href="">Blog</a></li>
+            </div>
+            <div class="col-lg-3 link3">
+              <a href="">Apply For Placio Payzello Card</a>
+            </div>
+          </div>
+          <div class="row footer2">
+            <div class="col-lg-4">
+              <p>Placio (Rental Stay Pvt. Ltd.) 2018-19</p>
+            </div>
+           <div class="col-lg-4"></div>
+            <div class="col-lg-4 follow">
+              <ul>
+                <li><a>Follow Us</a></li>
+                <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+                <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+                <li><i class="fa fa-linkedin" aria-hidden="true"></i></li>
+                <li><i class="fa fa-google-plus-official" aria-hidden="true"></i></li>
+                <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+                <li><i class="fa fa-youtube" aria-hidden="true"></i></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

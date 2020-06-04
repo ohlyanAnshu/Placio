@@ -34,3 +34,39 @@ class PostYourReq(models.Model):
 
     def __str__(self):
             return self.name
+
+class Franchise(models.Model):
+        name = models.CharField(max_length=200)
+        email = models.EmailField(max_length=200)
+        mobile_number = PhoneNumberField(null=False, blank=False, unique=True)
+        property_choices = (
+                ('apartment', 'Apartment'),
+                ('hostel', 'Student Hostel'),
+                ('service','Service Apartment'),
+            )
+        typeofproperty = models.CharField(max_length=200, choices=property_choices)
+        NumberofBedrooms = models.FloatField()
+        ExpectedRent = models.FloatField()
+        currentStatus = models.FloatField()             
+        city = models.ForeignKey(City, on_delete=models.CASCADE)      
+        address = models.CharField(max_length=200)
+        comment = models.TextField()
+
+        def __str__(self):
+            return self.name
+
+class PayRent(models.Model):
+        paymentType_choices = (
+                ('advance', 'Advance'),
+                ('rent', 'Rent'),
+            )
+        paymentType = models.CharField(max_length=200, choices = paymentType_choices)
+        propertyname = models.CharField(max_length=200)
+        tenantId = models.FloatField(max_length=200)
+        mobile_number = PhoneNumberField(null=False, blank=False, unique=True)
+        fullname = models.CharField(max_length=200)
+        amount = models.FloatField()
+        email = models.EmailField() 
+
+        def __str__(self):
+            return self.propertyname

@@ -1,0 +1,23 @@
+{% extends 'placio/base.html' %}
+
+{% load static %}
+{% block content %}
+<div class="container-fluid">
+    <div class="row about">
+        <div class="col-lg-6">
+            <h1>About Us</h1>
+            <p>Placio, a user-friendly digital platform, brings a new way of life for the students of Universities.
+                Founded on the belief of community-based living, it entails co-living in an environment where 
+                experience is more important than possession. The Placio platform offers fully furnished shared
+                rooms and private rooms to like-minded students who can have a comfortable and hassle-free stay
+                with each other. Placio offers carefully curated places of living which are not only comfortable
+                but also budget friendly for young minds.</p>
+            <p>We assure you that every Placio property is physically verified and strategically placed near the 
+                premises of the University campuses to ease the commuting woes of college students.</p>
+        </div>
+        <div class="col-lg-6">
+            <img src="{% static 'images/img1.png' %}" alt="img">
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,73 @@
+.firstrow p{
+    font-size: 20px;
+}
+
+.firstrow h1{
+    font-size: 53px;
+    font-weight: bold;
+}
+
+.secondrow{
+    margin-top: 3em;
+}
+
+.secondrow #max{
+    width: 100%;
+    height: 78%;
+    position: relative;
+}
+
+.secondrow i{
+    font-size: 78px;
+    
+    position: absolute;
+    margin: 117px 0 0 -337px;
+}
+
+.secondrow i:hover{
+    color:red;
+}
+
+.images {
+    position: relative;
+    background-image: url(https://i.ytimg.com/vi/OKHRi__TxsM/maxresdefault.jpg);
+}
+
+.forall1 img{
+    height: 13em;
+}
+
+.all h2{
+    margin: 2em 0em 1em 10em;
+}
+
+.forall1 .lastcard{
+    padding-bottom: 1.5em;
+}
+
+.forall1 h6{
+    font-weight: bold;
+}
+
+.forall1 a{
+    color:purple;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.amenities1 .firstrow{
+    margin-bottom: 3em;
+}
+
+.amenities1 img{
+    width: 20%;
+   
+}
+
+.amenities1 h2 {
+    margin: 1em 0em 1em 16em;
+}
+
+.amenities1{
+    margin-bottom: 2em;
+}
